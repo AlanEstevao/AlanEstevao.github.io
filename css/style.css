@@ -17,35 +17,7 @@
 body{
 	width:100%
 }
-/*
-.center{
-	margin: 0 auto;
-	width:100%;
-}
-*/
 
-/*.clearfix usado para adicionar um espaço vazio antes e depois dos elementos
-  evitando que os floats se aglomerem.
-*/
-
-/*
-.clearfix:before, .clearfix:after {
-    content: " "; 
-    display: table; 
-}
-.clearfix:after {
-    clear: both;
-}
-.clearfix {
-    *zoom: 1;
-}
-*/
-
-/*define a largura máxima em até 100%*/
-
-/*img {
-    max-width: 100%;
-}*/
 
 /* BANNER */
 
@@ -92,11 +64,9 @@ header nav{
 	width:30%;
 	margin-top:2.5%;
 	margin-bottom: 2.5%;
-	/*margin-left: 37.5%;*/
 }
 
 header nav ul{
-	/*float: left;*/
 	list-style: none;
 }
 
@@ -135,7 +105,7 @@ header nav ul li a{
 .btn_ini{
 	padding: 15px;
 	margin-top: 20px;
-	font-size: 25px;
+	font-size: 1.38888889em;
 	background: transparent;
 	color:#FFFFFF;
 	text-shadow: 2px 2px #000000;
@@ -392,18 +362,40 @@ footer p{
 	#texto_pcs h2{
 		text-align: center;
 	}
+
+	#section1{
+		height: 350px;
+	}
 	
 }
 /* 
 480px – Smartphones no formato paisagem com tela pequena
 ***********************************************************/
 @media screen and (max-width:480px){
+
+	#texto_centro h1{
+		font-size: 2.5em;
+	}
+
+	.btn_ini{
+		font-size: 1em;
+	}
+
+	#section1{
+		height: 650px;
+	}
+
 	
 }
 /* 
 320px – Smartphones no formato retrato com tela pequena
 ***********************************************************/
 @media screen and (max-width:320px){
+
+	#section1{
+		height: 650px;
+	}
+
 	
 }
 
