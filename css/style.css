@@ -1,0 +1,401 @@
+/* Serve para todo o site */
+/* ORDEM:
+- display
+- espaçamento:margin e padding;
+- fonte: font-size, family;
+- tamanho e espessura
+- cor e borda
+*/
+
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+}
+
+body{
+	width:100%
+}
+/*
+.center{
+	margin: 0 auto;
+	width:100%;
+}
+*/
+
+/*.clearfix usado para adicionar um espaço vazio antes e depois dos elementos
+  evitando que os floats se aglomerem.
+*/
+
+/*
+.clearfix:before, .clearfix:after {
+    content: " "; 
+    display: table; 
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+*/
+
+/*define a largura máxima em até 100%*/
+
+/*img {
+    max-width: 100%;
+}*/
+
+/* BANNER */
+
+#banner{
+	background-image: url('banner.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	max-width: 100%;
+	height: 100vh;
+	overflow: auto;
+	text-align: center;
+	bottom:0;
+	left:0;
+	right: 0;
+	top:0;
+
+}
+
+/* MENU */
+
+.center header{
+	width:100%;
+	background-color: #000000;
+	position: fixed;
+	opacity: 0.7;
+}
+
+header #logo{
+	float: left;
+	position: relative;
+	width: 10%;
+	margin:2.5%;
+	/*padding: 2.5%;*/
+}
+
+header nav{
+	float:right;
+	position: relative;
+	width:30%;
+	margin-top:2.5%;
+	margin-bottom: 2.5%;
+	/*margin-left: 37.5%;*/
+}
+
+header nav ul{
+	/*float: left;*/
+	list-style: none;
+}
+
+/* Deixando o menu na horizontal  */
+header nav ul li{
+	display: inline;
+}
+
+/* Estilizando os links */
+header nav ul li a{
+	display: inline-block;
+	padding:0 0.9%;
+	font-size: 1em;
+	text-decoration: none;
+	background-color: #000000;
+	color:#FFFFFF;
+}
+
+/***************************/
+
+#texto_centro{
+	position: relative;
+	top: 40%;
+}
+
+h1{
+	font-size: 2.88888889em;
+	color:#FFFFFF;
+	text-shadow: 2px 2px #000000;
+}
+
+#texto_centro a{
+	text-decoration: none;
+}
+
+.btn_ini{
+	padding: 15px;
+	margin-top: 20px;
+	font-size: 25px;
+	background: transparent;
+	color:#FFFFFF;
+	text-shadow: 2px 2px #000000;
+	border:2px solid #FFFFFF;
+	cursor: pointer;
+}
+
+/*******SECTION 1************/
+/* margin: distância externa (sup/dir/inf/esq) */
+/* padding: espaço entre o elemento e a borda*/
+#section1{
+	margin-top: 80px;
+	margin-bottom: 30px;
+	height: 150px;
+}
+
+#section1 h2{
+	color:#F36739;
+	font-size:35px;
+	letter-spacing: 8px;
+}
+#pcs{
+	float: left;
+	/*display: inline-block;
+	overflow: hidden;*/
+}
+
+#pcs img{
+	max-width: 100%;
+}
+
+#texto_pcs{
+	float: left;
+	display: inline-block;
+	overflow: hidden;
+	width:65%;
+}
+
+#texto_pcs p{
+	margin-top: 20px;
+	text-align: justify;
+}
+
+/******CONTENT***********/
+
+.content{
+	display: table;
+}
+
+/******CONTAINER*************/
+.container{
+	left:50%;
+	float: left;
+	display: inline-block;
+	width:290px;
+	height:350px;
+	margin-top: 30px;
+	margin-left:12px;
+	margin-right:12px;
+	border: 3px solid #CCCCCC;
+	box-shadow: 0 3px 2px #000000;
+
+}
+
+/**********SECTION 2*************/
+
+
+/* Parágrafos da parte de baixo */
+.par_abv{
+	color: #FFFFFF;
+	padding: 0 0 20px 20px;
+}
+
+/* partes de baixo dos containers*/
+.bellow{
+	text-align: center;
+}
+
+.bellow p{
+	margin:20px 15px 0 15px;
+}
+
+.bellow a{
+	text-decoration: none;
+	color:#FFFFFF;
+}
+
+.bellow .btn1{
+	padding: 10px 25px;
+	margin:20px;
+	letter-spacing: 1px;
+	background-color: #FF7F00;
+	color:#FFFFFF;
+	border: none;
+	border-radius:10px;
+	cursor: pointer;
+}
+
+.bellow .btn2{
+	padding: 10px 25px;
+	margin:20px;
+	letter-spacing: 1px;
+	background-color: #A72D3A;
+	color:#FFFFFF;
+	border: none;
+	border-radius:10px;
+	cursor: pointer;
+}
+
+#section2{
+
+}
+
+#section2 h2{
+	font-size:35px;
+	letter-spacing: 8px;
+	text-align: center;
+	color:#F36739;
+}
+
+#section2 img{
+	display:block;
+	margin: auto;
+}
+
+#img_js{
+	height: 164px;
+}
+
+#section2 #html1{
+}
+
+#section2 #html1 #above1{
+	background-color: #D65B43;
+}
+
+#section2 #html2{
+}
+
+#section2 #html2 #above2{
+	background-color: #D65B43;
+}
+
+
+#section2 #html-css{
+}
+
+#section2 #html-css #above3{
+	background-color: #6CC5EB;
+}
+
+#section2 #js{
+}
+
+#section2 #js #above4{
+	background-color: #F3CA4B;
+}
+
+/* SECTION 3 */
+
+#section3{
+
+}
+
+#section3 h2{
+	font-size:35px;
+	letter-spacing: 8px;
+	text-align: center;
+	color:#AE2D3B;
+}
+
+#section3 img{
+	display:block;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+#section3 #ruby{
+}
+
+#section3 #ruby #above1{
+	background-color: #B21300;
+}
+
+#section3 #rails1{
+}
+
+#section3 #rails1 #above2{
+	background-color: #A72D3A;
+}
+
+#section3 #heroku{
+}
+
+#section3 #heroku #above3{
+	background-color: #8A2BFF;
+}
+
+#section3 #rails2{
+}
+
+#section3 #rails2 #above4{
+	background-color: #A72D3A;
+}
+
+
+.btn .black_btn{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	padding: 15px 60px;
+	letter-spacing: 3px;
+	background-color: #000000;
+	color:#FFFFFF;
+	border: none;
+	border-radius:8px;
+	cursor: pointer;
+}
+
+hr{
+	margin-bottom: 30px;
+}
+
+footer{
+	padding: 15px;
+	background-color: #000000;
+	text-align: center;
+}
+footer p{
+	color:#FFFFFF;
+}
+
+
+/************RESPONSIVIDADE***************/
+/* 
+1200px – Desktops, notebooks com monitores widescreen
+***********************************************************/
+@media screen and (max-width:1200px){
+
+	h1{
+		font-size: 2.888888889em;
+	}
+	
+}
+/* 
+960px – Tablets no formato paisagem e alguns monitores mais antigos
+***********************************************************/
+@media screen and (max-width:960px){
+	
+}
+/* 
+768px – Tablets no formato retrato, como o iPad
+***********************************************************/
+@media screen and (max-width:768px){
+	
+}
+/* 
+480px – Smartphones no formato paisagem com tela pequena
+***********************************************************/
+@media screen and (max-width:480px){
+	
+}
+/* 
+320px – Smartphones no formato retrato com tela pequena
+***********************************************************/
+@media screen and (max-width:320px){
+	
+}
+
