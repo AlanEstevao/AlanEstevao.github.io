@@ -392,18 +392,40 @@ footer p{
 	#texto_pcs h2{
 		text-align: center;
 	}
+
+	#section1{
+		height: 350px;
+	}
 	
 }
 /* 
 480px – Smartphones no formato paisagem com tela pequena
 ***********************************************************/
 @media screen and (max-width:480px){
+
+	#texto_centro h1{
+		font-size: 2.5em;
+	}
+
+	.btn_ini{
+		font-size: 1em;
+	}
+
+	#section1{
+		height: 650px;
+	}
+
 	
 }
 /* 
 320px – Smartphones no formato retrato com tela pequena
 ***********************************************************/
 @media screen and (max-width:320px){
+
+	#section1{
+		height: 650px;
+	}
+
 	
 }
 
