@@ -17,35 +17,93 @@
 body{
 	width:100%
 }
-/*
-.center{
-	margin: 0 auto;
-	width:100%;
-}
-*/
 
-/*.clearfix usado para adicionar um espaço vazio antes e depois dos elementos
-  evitando que os floats se aglomerem.
-*/
+/* ALERTA */
 
-/*
-.clearfix:before, .clearfix:after {
-    content: " "; 
-    display: table; 
+body{
+	margin: 0px;
+	font-family: 'Open Sans', sans-serif;
 }
-.clearfix:after {
-    clear: both;
-}
-.clearfix {
-    *zoom: 1;
-}
-*/
 
-/*define a largura máxima em até 100%*/
+#alerta {
+	width: 400px;
+	background-color: #eddfdf;
+	border: 1px solid #ccc;
+	margin: 40px auto;
+	cursor: move;
+	position: absolute;
+	left: calc(50% - 200px);
+	z-index:2;
+}
 
-/*img {
-    max-width: 100%;
-}*/
+#alerta .title{
+	background-color: #329596;
+	height: 30px;
+	border-bottom: 1px solid #227374;
+	text-transform: uppercase;
+	padding: 10px 10px 0px 0px;
+	text-align: center;
+	color: #073c3d;
+	text-shadow: 1px 1px 1px #6fabac;
+}
+
+#alerta .title i{
+	float: right;
+	padding-top: 3px;
+}
+
+#alerta .body{
+	padding: 10px;
+}
+
+form button{
+	display: block;
+	padding: 4px 11px;
+	border: 1px solid #ffcc00;
+	background-color: #ffcc00 !important;
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffcc00), color-stop(100%,#ff6600)) !important;
+	background: -webkit-linear-gradient(top, #ffcc00, #ff6600) !important;
+	background: -moz-linear-gradient(top, #ffcc00, #ff6600) !important;
+	background: -ms-linear-gradient(top, #ffcc00, #ff6600) !important;
+	background: -o-linear-gradient(top, #ffcc00, #ff6600) !important;
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc00', endColorstr='#ff6600',GradientType=0 );
+	font-weight: bold;
+	color: #fff;
+	text-shadow: 0 1px 0 #666;
+	cursor:pointer;
+	position: relative;
+	margin: 10px auto;
+}
+
+input[type=text]{   
+    height: 34px;
+    width: 315px;
+    padding: 2px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+#alerta #resultado{
+	color: #227210;
+	font-size: 12px;
+}
+
+
+#contador {
+	color: #227210;
+	text-align: center;
+}
+
 
 /* BANNER */
 
@@ -70,8 +128,9 @@ header{
 	width:100%;
 	background-color: #000000;
 	position: fixed;
-	overflow: none;
+/*	overflow: none; */
 	opacity: 0.7;
+	z-index:1;
 }
 
 header #logo{
@@ -92,11 +151,9 @@ header nav{
 	width:30%;
 	margin-top:2.5%;
 	margin-bottom: 2.5%;
-	/*margin-left: 37.5%;*/
 }
 
 header nav ul{
-	/*float: left;*/
 	list-style: none;
 }
 
@@ -114,6 +171,8 @@ header nav ul li a{
 	background-color: #000000;
 	color:#FFFFFF;
 }
+
+
 
 /***************************/
 
@@ -135,7 +194,7 @@ header nav ul li a{
 .btn_ini{
 	padding: 15px;
 	margin-top: 20px;
-	font-size: 25px;
+	font-size: 1.38888889em;
 	background: transparent;
 	color:#FFFFFF;
 	text-shadow: 2px 2px #000000;
@@ -226,7 +285,8 @@ header nav ul li a{
 }
 
 .bellow .btn1{
-	padding: 10px 25px;
+	width:200px;
+	height: 40px;
 	margin:20px;
 	letter-spacing: 1px;
 	background-color: #FF7F00;
@@ -237,7 +297,8 @@ header nav ul li a{
 }
 
 .bellow .btn2{
-	padding: 10px 25px;
+	width:200px;
+	height: 40px;
 	margin:20px;
 	letter-spacing: 1px;
 	background-color: #A72D3A;
@@ -337,12 +398,17 @@ hr{
 }
 
 footer{
-	padding: 15px;
+	padding: 12px;
 	background-color: #000000;
 	text-align: center;
 }
 footer p{
 	color:#FFFFFF;
+}
+
+footer a{
+	text-decoration: none;
+	color:#FFFFFF;	
 }
 
 
@@ -428,4 +494,5 @@ footer p{
 
 	
 }
+
 

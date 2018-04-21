@@ -7,19 +7,45 @@
 		<meta name="description" content="Desafio Trainee 2018.1">
 		<meta name="author" content="GTi Engenharia Jr" />
 		<!-- SITE TITLE -->
-		<title> Nome do site</title>
+		<title>Desafio 3 - GTi</title>
 		<!-- STYLESHEETS -->
 		<link href="css/style.css" rel="stylesheet">
 		<!-- FAVICON 16x16px -->
 		<link rel="icon" href="images/ico.png">
 		<!-- FONTE -->
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+		<!-- BOOTSTRAP -->
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css" rel="stylesheet">
+        <!-- BIBLIOTECA JQUERY -->
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <!-- BIBLIOTECA JQUERY UI -->
+        <script src="js/jquery-ui.js"></script>
+        <!-- BIBLIOTECA TOASTR (notificacao personalizada) -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/2.1.3/toastr.min.js"></script>
+        <!--MEU JS-->
+        <script type="text/javascript" src="js/script.js"></script>
 	</head>
 	
 	<body class="center clearflix">
+
+		<!-- ALERTA -->
+		<div id="alerta" hidden="">
+        	<div class="title">Receba Nossas Novidades <i class="fa fa-times"></i></div>
+         		<div class="body">
+            		<form id="novidadesform" name="contact-form" method="POST" >
+               			<label>e-mail:</label>
+               			<input id="email" type="text" name="email" placeholder="digite seu email">
+               			<button type="submit">Enviar</button>
+            		</form>
+            	<div id="resultado"></div>
+         	</div>
+      	</div>
+      	<div id="contador">Alerta aparecendo em: <span id="timer">5</span> segundos</div>
+
 		<div id="banner">
 			<header>
-				<div id="logo">
+				<div id="logo" title="Trainee GTi">
 					<a href="#"><img src="images/logo.png" alt="logo" /></a>
 				</div>
 				<nav>
@@ -34,32 +60,34 @@
 
 			<div id="texto_centro">
 				<h1><img src="images/icone-header.png" />   APRENDA A <br/>DESENVOLVER COM A GTi JR.</h1>
-				<a href="#"><button class="btn_ini">HTML 5 + CSS 3 + JS</button></a>
-				<a href="#"><button class="btn_ini">Ruby On Rails</button></a>
+				<a href="#section2"><button class="btn_ini" title="Ver seção HTML + CSS + JS">HTML 5 + CSS 3 + JS</button></a>
+				<a href="#section3"><button class="btn_ini" title="Ver seção sobre Ruby On Rails">Ruby On Rails</button></a>
 			</div>
 		</div>
 
 		<section id="section1">
 			<div id="pcs">
-				<img src="images/pcs.png">
+				<img src="images/pcs.png" title="Imagem com computadores">
 			</div>
 			<div id="texto_pcs">
 				<h2 id="material">MATERIAL TRAINEE 2018</h2>
 				<p>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vulputate nunc sed ullamcorper suscipit. Cras nisl nibh, pulvinar eleifend tincidunt at, luctus id augue. In vel consectetur ex. Mauris accumsan suscipit nibh, et sagittis urna tincidunt vel. Integer quis fermentum nulla. Sed malesuada urna in elit egestas ultricies. Phasellus eget commodo lorem. Vivamus ut ultricies ex, rhoncus consectetur leo. Aliquam eget iaculis lectus, id laoreet tellus. Aliquam erat volutpat.</p>
 			</div>
+
 		</section>
 
-		<hr id="hr">
+		<hr />
 
 		<section id="section2">
 			<center>
 			<div class="content">
 				<h2> HTML5 | CSS3 | JAVASCRIPT </h2>
 				
-				<div class="container">
+				<div class="container" title="Introdução ao HTML5">
 					<div id="above1"> 
-						<img src="images/html.png" />
+						<img src="images/html.png" class="image">
+
 						<p class="par_abv">HTML 5 - Introdução<br />Postado por patrick</p>
 					</div>
 					<div class="bellow">
@@ -69,7 +97,7 @@
 
 				</div>
 				
-				<div class="container">
+				<div class="container" title="Lista de Livros de HTML5">
 					<div id="above2">
 						<img src="images/html.png" />
 						<p class="par_abv">Lista de livros<br />Postado por rayane</p>
@@ -80,10 +108,10 @@
 					</div>
 				</div>
 
-				<div class="container">
+				<div class="container" title="Aprenda CSS3">
 					<div id="above3">
 						<img src="images/html-css.png" />
-						<p class="par_abv">HTML 5 - Introdução<br />Postado por patrick</p>
+						<p class="par_abv">CSS3 - Introdução<br />Postado por patrick</p>
 					</div>
 					<div class="bellow">
 						<p> Postado dia 02/08/2017</p>
@@ -91,10 +119,10 @@
 					</div>
 				</div>
 
-				<div class="container">
+				<div class="container" title="Aprenda JavaScript">
 					<div id="above4">
 						<img id="img_js" src="images/js.png" />
-						<p class="par_abv">HTML 5 - Introdução<br />Postado por patrick</p>
+						<p class="par_abv">JavaScript - Introdução<br />Postado por patrick</p>
 					</div>
 					<div class="bellow">
 						<p>Postado dia 02/08/2017</p>
@@ -116,7 +144,7 @@
 		<section id="section3">
 			<div class="content">
 				<h2>Ruby On Rails</h2>
-				<div class="container">
+				<div class="container" title="Introdução ao Ruby">
 					<div id="above1">
 						<img src="images/ruby.png" />
 						<p class="par_abv">RUBY - Introdução<br />Postado por Lucas Noleto</p>
@@ -127,7 +155,7 @@
 					</div>
 				</div>
 
-				<div class="container">
+				<div class="container" title="Aprenda Rails 5">
 					<div id="above2">
 						<img src="images/rails.png" />
 						<p class="par_abv">RAILS 5 - Introdução<br />Postado por patrick</p>
@@ -138,10 +166,10 @@
 					</div>
 				</div>
 				
-				<div class="container">
+				<div class="container" title="Fazendo deploy no Heroku">
 					<div id="above3">
 						<img src="images/heroku.png" />
-						<p class="par_abv">Fazendo deploy no heroku<br />Postado por Eduardo</p>
+						<p class="par_abv">Fazendo deploy no Heroku<br />Postado por Eduardo</p>
 					</div>
 					<div class="bellow">
 						<p>Postado dia 02/04/2018</p>
@@ -149,7 +177,7 @@
 					</div>
 				</div>
 
-				<div class="container">
+				<div class="container" title="GEMS importantes do Rails">
 					<div id="above4">
 						<img src="images/rails.png" />
 						<p class="par_abv">RAILS - GEMS importantes<br />Postado por Gilvan</p>
@@ -169,7 +197,7 @@
 
 
 		<footer>
-			<p>Desenvolvido por Alan Estevão (GTi Engenharia Jr.)</p>
+			<p>Desenvolvido com ❤ por Alan Estevão (<a href="http://www.gti.ufc.br"><b>GTi Engenharia Jr.</b></a>)</p>
 		</footer>
 		
 
